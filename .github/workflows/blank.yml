@@ -75,7 +75,7 @@ jobs:
       
       - name: 保活提交（不修改 workflow）
         env:
-          GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
         run: |
           # 创建/更新一个保活记录文件
           cat > .keepalive << EOF
